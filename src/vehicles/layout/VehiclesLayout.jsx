@@ -1,10 +1,13 @@
 import { Box } from '@mui/material'
-import React from 'react'
+import { NavBar } from '../components';
+
+const drawerWidth = 240;
 
 export const VehiclesLayout = ({children}) => {
   return (
     <Box sx={{ display: 'flex' }}>
 
+      <NavBar drawerWidth={ drawerWidth } />
 
       <Box
       component='main'
