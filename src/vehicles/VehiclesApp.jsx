@@ -1,10 +1,8 @@
 import React from 'react'
-import { AppTheme } from '../theme'
+import { VehiclesPage } from './pages/VehiclesPage'
 
 export const VehiclesApp = () => {
-  return (
-    <AppTheme>
-      <h1>VehiclesApp</h1>
-    </AppTheme>
+  return (  
+      <VehiclesPage />
   )
 }
