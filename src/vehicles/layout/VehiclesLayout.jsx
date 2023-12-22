@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import { NavBar } from '../components';
+import { NavBar, SideBar } from '../components';
 
 const drawerWidth = 240;
 
@@ -9,6 +9,7 @@ export const VehiclesLayout = ({children}) => {
 
       <NavBar drawerWidth={ drawerWidth } />
 
+      <SideBar drawerWidth={ drawerWidth } />
       <Box
       component='main'
       sx={{
