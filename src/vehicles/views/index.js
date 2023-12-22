@@ -1,1 +1,1 @@
-export * from './VehicleStatisticsView'
+export * from './CarShopView'

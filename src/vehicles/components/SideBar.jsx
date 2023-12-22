@@ -17,7 +17,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
         >
             <Toolbar>
                 <Typography variant='h6' noWrap component='div'>
-                    ETRA
+                    Usuario A1
                 </Typography>
             </Toolbar>
             <Divider />

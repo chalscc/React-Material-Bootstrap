@@ -27,7 +27,7 @@ export const NavBar = ({drawerWidth = 240}) => {
             <Typhograpy variant="h6" noWrap component='div'> VehiclesApp </Typhograpy>
 
             <IconButton color='error'>
-              <LogoutOutlined />
+              {/* <LogoutOutlined /> */}
             </IconButton>
 
           </Grid>

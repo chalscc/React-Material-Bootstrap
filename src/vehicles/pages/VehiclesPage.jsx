@@ -1,12 +1,12 @@
 import React from 'react'
 import { VehiclesLayout } from '../layout/VehiclesLayout'
-import { VehicleStatisticsView } from '../views'
+import { CarShopView } from '../views'
 
 export const VehiclesPage = () => {
   return (
     <VehiclesLayout>
 
-      <VehicleStatisticsView />
+      <CarShopView />
 
     </VehiclesLayout>
   )
