@@ -4,7 +4,7 @@ import { useImage } from '../../helpers'
 
 const heightImage = 250;
 
-export const TarjetaVehiculo = ({ id, brand, fuelType, mileage, year, model, monthlyPrice, originalPrice, salePrice }) => {
+export const VehiclesCard = ({ id, brand, fuelType, mileage, year, model, monthlyPrice, originalPrice, salePrice }) => {
 
   const { image } = useImage(`car${id}`)
 

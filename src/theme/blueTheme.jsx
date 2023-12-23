@@ -9,6 +9,9 @@ export const blueTheme = createTheme({
     secondary: {
       main: "#f50057",
     },
+    button: {
+      icon: '#fff',
+    },
     error: {
       main: red.A400,
     },    

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
-import { TarjetaVehiculo } from '../components';
+import { VehiclesCard } from '../components';
 import { cars } from '../../data/cars';
 
 
@@ -27,7 +27,7 @@ export const CarShopView = () => {
 
         {
           carList.map(( car ) => (
-            <TarjetaVehiculo 
+            <VehiclesCard 
             key={ car.id }
             {...car}
             />

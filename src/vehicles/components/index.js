@@ -1,3 +1,3 @@
 export * from './SideBar';
 export * from './NavBar';
-export * from './TarjetaVehiculo';
+export * from './VehiclesCard';
