@@ -1,10 +1,11 @@
 import { Box, Card, CardContent, CardMedia, Divider, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
+import { useImage } from '../../helpers/useImage'
 
 
 export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, precioMes, precioOriginal, precioVenta, id }) => {
 
-  console.log(id)
+  const { loading, error, image } = useImage(`coche${id}`)
 
   return (
     <Grid item xs={12} sm={6} md={3}>
@@ -12,7 +13,7 @@ export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, p
         <CardMedia
           component="img"
           height="250"
-          image={`../../assets/coche${id}.jpg`}
+          image={image}
           alt="Imagen del producto 1"
         />
         <CardContent>
