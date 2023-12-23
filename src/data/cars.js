@@ -1,7 +1,7 @@
 export const cars = [
   {
       'id': '1',
-      'brand': 'Volkswagen Golf', 
+      'brand': 'Volkswagen', 
       'model': '2.0 TSI 220cv GTI BMT', 
       'originalPrice': '21,490',
       'salePrice': '19,190',
@@ -13,7 +13,7 @@ export const cars = [
   },
   {
     'id': '2',
-    'brand': 'Audi A1', 
+    'brand': 'Audi', 
     'model': 'S-Line 1.6 TDI 116cv', 
     'originalPrice': '18,490',
     'salePrice': '14,390',
@@ -25,7 +25,7 @@ export const cars = [
 },
 {
   'id': '3',
-  'brand': 'Peugeot 208', 
+  'brand': 'Peugeot', 
   'model': '5P PACK ALIVE PureTech 60kW 82CV', 
   'originalPrice': '13,990',
   'salePrice': '10,690',
@@ -37,7 +37,7 @@ export const cars = [
 },
 {
   'id': '4',
-  'brand': 'Audi A1', 
+  'brand': 'Audi', 
   'model': '25 TFSI 70kW 95CV', 
   'originalPrice': '16,990',
   'salePrice': '13,890',

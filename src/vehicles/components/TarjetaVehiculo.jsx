@@ -23,7 +23,7 @@ export const TarjetaVehiculo = ({ id, brand, fuelType, mileage, year, model, mon
               Desde {monthlyPrice} €/mes
             </Box>
             <Box className="text-end">
-              <Box color="error.main" sx={{ textDecoration: 'line-through', marginBottom: "-5px" }}>
+              <Box color="error.main" sx={{ textDecoration: 'line-through', marginBottom: "-10px" }}>
                 {originalPrice} €
               </Box>
               <Box className="fs-3">
