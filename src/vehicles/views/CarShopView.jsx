@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
 import { VehiclesCard, VehiclesExpert } from '../components';
-import { cars } from '../../data/cars';
+import { cars } from '../../data';
 
 
 export const CarShopView = () => {
@@ -23,7 +23,7 @@ export const CarShopView = () => {
         alignItems='center'
         spacing={2}
         style={{ width: '100%' }}
-      >        
+      >
 
         {
           carList.map((car) => (

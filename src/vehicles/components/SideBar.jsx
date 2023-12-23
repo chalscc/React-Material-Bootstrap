@@ -1,5 +1,5 @@
 import { Box, Checkbox, Divider, Drawer, FormControlLabel, FormGroup, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Rating, Slider, Toolbar, Typography } from '@mui/material'
-import { brands, fuelTypes } from '../../data/vehicles'
+import { brands, fuelTypes } from '../../data'
 
 export const SideBar = ({ drawerWidth = 240 }) => {
   return (
