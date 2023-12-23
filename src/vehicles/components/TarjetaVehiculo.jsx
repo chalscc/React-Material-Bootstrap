@@ -1,22 +1,37 @@
 import { Box, Card, CardContent, CardMedia, Divider, Grid, Typography } from '@mui/material'
-import React, { useContext } from 'react'
 import { useImage } from '../../helpers/useImage'
 
 
+const heightImage = 250;
+
 export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, precioMes, precioOriginal, precioVenta, id }) => {
 
-  const { loading, error, image } = useImage(`coche${id}`)
+  const { image } = useImage(`coche${id}`)
 
   return (
     <Grid item xs={12} sm={6} md={3}>
       <Card>
         <CardMedia
           component="img"
-          height="250"
+          height={heightImage}
           image={image}
-          alt="Imagen del producto 1"
+          alt="{modelo}"
         />
         <CardContent>
+          <Typography sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Box variant="div" component="span">
+              Desde {precioMes} €/mes
+            </Box>
+            <Box variant="div" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
+              <Box color="error.main" component="span" sx={{ textDecoration: 'line-through' }}>
+                {precioOriginal} €
+              </Box>
+              <Box component="span">
+                {precioVenta} €
+              </Box>
+            </Box>
+          </Typography>
+          <Divider style={{ margin: '0px 0' }} />
           <Typography gutterBottom variant="h5" component="div">
             {marca}
           </Typography>
@@ -24,38 +39,18 @@ export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, p
             {modelo}
           </Typography>
           <Divider style={{ margin: '10px 0' }} />
-          <Typography variant="body2">
-            <Box color="error.main" component={'span'} sx={{ textDecoration: 'line-through' }}>
-              {precioOriginal} €
-            </Box>
-            <Box component={'span'}>
-              {precioVenta} €
-            </Box>
-          </Typography>
-          <Divider style={{ margin: '10px 0' }} />
-          <Typography variant="body2" color="text.secondary">
-            Segunda Descripción del Producto 1
-          </Typography>
-          <Grid container spacing={1} justifyContent="space-between">
-            <Grid item xs={3}>
-              <Typography variant="body2" color="text.secondary" style={{ border: '1px solid black', padding: '8px' }}>
-                {ano}
-              </Typography>
+          <Grid container spacing={1} justifyContent="center" alignItems="center">
+            <Grid item xs={3} align="center">
+              {ano}
             </Grid>
-            <Grid item xs={3}>
-              <Typography variant="body2" color="text.secondary" style={{ border: '1px solid black', padding: '8px' }}>
-                {km} km
-              </Typography>
+            <Grid item xs={3} align="center">
+              {km}Km
             </Grid>
-            <Grid item xs={3}>
-              <Typography variant="body2" color="text.secondary" style={{ border: '1px solid black', padding: '8px' }}>
-                {combustible}
-              </Typography>
+            <Grid item xs={3} align="center">
+              {combustible}
             </Grid>
-            <Grid item xs={3}>
-              <Typography variant="body2" color="text.secondary" style={{ border: '1px solid black', padding: '8px' }}>
-                {cambio}
-              </Typography>
+            <Grid item xs={3} align="center">
+              {cambio}
             </Grid>
           </Grid>
         </CardContent>

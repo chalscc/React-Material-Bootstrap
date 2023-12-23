@@ -8,16 +8,13 @@ export const CarShopView = () => {
 
   const [carList, setCarList] = useState(cars);
 
-  console.log(cars)
-
-
   return (
     <Grid
       container
       direction='column'
       justifyContent='flex-end'
       alignItems='center'
-      style={{ height: '50vh' }} // Esto asegura que el contenedor ocupe la mitad inferior de la pantalla
+      style={{ height: '50vh' }}
     >
       <Grid
         container
@@ -25,7 +22,7 @@ export const CarShopView = () => {
         justifyContent='center'
         alignItems='center'
         spacing={2}
-        style={{ width: '100%' }} // Ocupa todo el ancho disponible
+        style={{ width: '100%' }}
       >
 
         {
