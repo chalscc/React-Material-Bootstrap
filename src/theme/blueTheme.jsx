@@ -10,7 +10,7 @@ export const blueTheme = createTheme({
       main: "#f50057",
     },
     button: {
-      icon: '#fff',
+      icon: '#ffffff',
     },
     error: {
       main: red.A400,

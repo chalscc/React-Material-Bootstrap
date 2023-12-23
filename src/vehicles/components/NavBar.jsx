@@ -1,7 +1,14 @@
 import { AppBar, Button, Grid, IconButton, Toolbar } from "@mui/material"
-import { LoginOutlined, LogoutOutlined, ShoppingCartOutlined, PersonAddOutlined } from '@mui/icons-material';
-// import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
+import { LoginOutlined, ShoppingCartOutlined, PersonAddOutlined } from '@mui/icons-material';
+import { useTheme } from '@mui/material/styles';
+
 export const NavBar = ({ drawerWidth = 240 }) => {
+
+  const theme = useTheme();
+  const buttonColor = theme.palette.button.icon;
+
+  console.log(buttonColor)
+
   return (
     <AppBar
       position="fixed"
@@ -20,7 +27,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
           style={{ width: '100%' }}
         >
           <Grid item>
-            <IconButton size='large' color='inherit'>
+            <IconButton size='large' sx={{ color: buttonColor }}>
               <ShoppingCartOutlined />
             </IconButton>
           </Grid>
