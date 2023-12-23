@@ -1,11 +1,8 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
 import { VehiclesCard, VehiclesExpert } from '../components';
-import { experts } from '../../data';
 
-export const ExpertsView = () => {
-
-  console.log('experts', experts)
+export const ExpertsView = ( {experts} ) => {
 
   const [expertsList, setExpertsList] = useState(experts);
 
@@ -15,7 +12,7 @@ export const ExpertsView = () => {
       direction='column'
       justifyContent='flex-end'
       alignItems='center'
-      style={{ height: '50vh' }}
+      style={{ height: '37vh' }}
     >
       <Grid
         container

@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
-import { VehiclesCard, VehiclesExpert } from '../components';
-import { cars } from '../../data';
+import { VehiclesCard } from '../components';
 
-
-export const CarShopView = () => {
+export const CarShopView = ({ cars }) => {
 
   const [carList, setCarList] = useState(cars);
 
