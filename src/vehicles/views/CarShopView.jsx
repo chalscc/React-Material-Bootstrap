@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
-import { VehiclesCard } from '../components';
+import { VehiclesCard, VehiclesExpert } from '../components';
 import { cars } from '../../data/cars';
 
 
@@ -23,13 +23,13 @@ export const CarShopView = () => {
         alignItems='center'
         spacing={2}
         style={{ width: '100%' }}
-      >
+      >        
 
         {
-          carList.map(( car ) => (
-            <VehiclesCard 
-            key={ car.id }
-            {...car}
+          carList.map((car) => (
+            <VehiclesCard
+              key={car.id}
+              {...car}
             />
           ))
         }

@@ -3,18 +3,18 @@ import { NavBar, SideBar } from '../components';
 
 const drawerWidth = 240;
 
-export const VehiclesLayout = ({children}) => {
+export const VehiclesLayout = ({ children }) => {
   return (
     <Box sx={{ display: 'flex' }}>
 
-      <NavBar drawerWidth={ drawerWidth } />
+      <NavBar drawerWidth={drawerWidth} />
 
-      <SideBar drawerWidth={ drawerWidth } />
+      <SideBar drawerWidth={drawerWidth} />
       <Box
-      component='main'
-      sx={{
-        flexGrow: 1, padding: 3
-      }}
+        component='main'
+        sx={{
+          flexGrow: 1, padding: 3
+        }}
       >
         <Toolbar />
         {children}

@@ -7,8 +7,6 @@ export const NavBar = ({ drawerWidth = 240 }) => {
   const theme = useTheme();
   const buttonColor = theme.palette.button.icon;
 
-  console.log(buttonColor)
-
   return (
     <AppBar
       position="fixed"

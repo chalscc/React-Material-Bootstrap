@@ -37,7 +37,7 @@ export const cars = [
 },
 {
   'id': '4',
-  'brand': 'Audi', 
+  'brand': 'Nissan', 
   'model': '25 TFSI 70kW 95CV', 
   'originalPrice': '16,990',
   'salePrice': '13,890',
