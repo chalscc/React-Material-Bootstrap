@@ -20,10 +20,7 @@ export const VehiclesLayout = ({children}) => {
         {children}
       </Box>
 
-
     </Box>
-
-    
 
   )
 }

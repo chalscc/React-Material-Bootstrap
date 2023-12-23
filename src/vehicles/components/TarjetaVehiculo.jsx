@@ -1,12 +1,12 @@
 import { Box, Card, CardContent, CardMedia, Divider, Grid, Typography } from '@mui/material'
-import { useImage } from '../../helpers/useImage'
+import { useImage } from '../../helpers'
 
 
 const heightImage = 250;
 
-export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, precioMes, precioOriginal, precioVenta, id }) => {
+export const TarjetaVehiculo = ({ id, brand, fuelType, mileage, year, model, monthlyPrice, originalPrice, salePrice }) => {
 
-  const { image } = useImage(`coche${id}`)
+  const { image } = useImage(`car${id}`)
 
   return (
     <Grid item xs={12} sm={6} md={3}>
@@ -15,42 +15,42 @@ export const TarjetaVehiculo = ({ ano, cambio, combustible, km, marca, modelo, p
           component="img"
           height={heightImage}
           image={image}
-          alt="{modelo}"
+          alt={model}
         />
         <CardContent>
-          <Typography sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Box variant="div" component="span">
-              Desde {precioMes} €/mes
+          <Grid container sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end' }}>
+              Desde {monthlyPrice} €/mes
             </Box>
-            <Box variant="div" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
-              <Box color="error.main" component="span" sx={{ textDecoration: 'line-through' }}>
-                {precioOriginal} €
+            <Box className="text-end">
+              <Box color="error.main" sx={{ textDecoration: 'line-through', marginBottom: "-5px" }}>
+                {originalPrice} €
               </Box>
-              <Box component="span">
-                {precioVenta} €
+              <Box className="fs-3">
+                {salePrice} €
               </Box>
             </Box>
-          </Typography>
-          <Divider style={{ margin: '0px 0' }} />
-          <Typography gutterBottom variant="h5" component="div">
-            {marca}
+          </Grid>
+          <Divider />
+          <Typography gutterBottom variant="h5">
+            {brand}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {modelo}
+            {model}
           </Typography>
           <Divider style={{ margin: '10px 0' }} />
           <Grid container spacing={1} justifyContent="center" alignItems="center">
             <Grid item xs={3} align="center">
-              {ano}
+              {year}
             </Grid>
             <Grid item xs={3} align="center">
-              {km}Km
+              {mileage}Km
             </Grid>
             <Grid item xs={3} align="center">
-              {combustible}
+              {fuelType}
             </Grid>
             <Grid item xs={3} align="center">
-              {cambio}
+              {brand}
             </Grid>
           </Grid>
         </CardContent>
