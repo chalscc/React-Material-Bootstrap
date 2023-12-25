@@ -1,8 +1,6 @@
 import { Box, Checkbox, Divider, Drawer, FormControlLabel, FormGroup, Rating, Slider, Toolbar, Typography } from '@mui/material'
 
-import { fuelTypes } from '../../data';
-import { FilterByBrand } from './Filter/FilterByBrand';
-import { FilterByRating } from './Filter/FilterByRating';
+import { FilterByBrand, FilterByRating, FilterByPrice, FilterByFuel } from '../components';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
 
@@ -39,37 +37,11 @@ export const SideBar = ({ drawerWidth = 240 }) => {
 
         <Divider />
 
-        <Box style={{ padding: '25px' }}>
-          <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
-            Rango de Precio
-          </Typography>
-          <Slider
-            min={0}
-            max={35000}
-            value={[0, 20000]}
-            valueLabelDisplay="auto"
-            aria-labelledby="range-slider"
-          />
-        </Box>
+        <FilterByPrice />        
 
         <Divider />
 
-        <FormGroup style={{ padding: '20px' }}>
-          <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
-            Tipo de combustible
-          </Typography>
-          {fuelTypes.map((type) => (
-            <FormControlLabel
-              key={type}
-              control={
-                <Checkbox
-                  value={type}
-                />
-              }
-              label={type}
-            />
-          ))}
-        </FormGroup>
+        <FilterByFuel />
 
       </Drawer>
 
