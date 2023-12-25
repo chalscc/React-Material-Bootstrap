@@ -6,7 +6,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
 
   const theme = useTheme();
 
-  const pages = ['Productos', 'Precio', 'Blog'];
+  const pages = ['Productos', 'Precio', 'Blog', 'Contacto'];
 
   return (
     <AppBar
