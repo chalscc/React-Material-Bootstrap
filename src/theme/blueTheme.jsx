@@ -44,7 +44,14 @@ export const blueTheme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.20)', // Esto simula una elevación de 25 para la tarjeta
+          boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.20)',
+        },
+      },
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          background: '#000000',
         },
       },
     },

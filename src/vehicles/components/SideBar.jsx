@@ -4,7 +4,6 @@ import { brands, fuelTypes } from '../../data'
 export const SideBar = ({ drawerWidth = 240 }) => {
   return (
     <Box
-      component='nav'
       sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
     >
       <Drawer
@@ -16,16 +15,16 @@ export const SideBar = ({ drawerWidth = 240 }) => {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
-            paddingTop: '20px',
           },
         }}
       >
         <Toolbar>
-          <Typography variant='h5' style={{ flexGrow: 1, textAlign: 'center', marginBottom: '20px' }}>
+          <Typography variant='h5' style={{ flexGrow: 1, textAlign: 'center' }}>
             Filtros
           </Typography>
         </Toolbar>
-        {/* <Divider /> */}
+
+        <Divider />
 
         <FormGroup style={{ padding: '20px' }}>
           <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
@@ -43,17 +42,17 @@ export const SideBar = ({ drawerWidth = 240 }) => {
 
         <Divider />
 
-        <div style={{ padding: '20px', textAlign: 'center' }}>
+        <Box style={{ padding: '20px', textAlign: 'center' }}>
           <Typography variant="subtitle1" gutterBottom>
             Media de valoración por cliente
           </Typography>
           <Rating
-            name="simple-controlled"
+            name="ratingClient"
             precision={1}
             max={5}
             size="large"
           />
-        </div>
+        </Box>
 
         <Divider />
 
@@ -73,7 +72,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
         <Divider />
 
         <FormGroup style={{ padding: '20px' }}>
-        <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
+          <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
             Tipo de combustible
           </Typography>
           {fuelTypes.map((type) => (
