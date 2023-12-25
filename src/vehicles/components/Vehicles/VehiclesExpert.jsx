@@ -19,7 +19,7 @@ export const VehiclesExpert = ({ id, name, quote }) => {
           />
         </Card>
 
-        <Card variant="outlined" style={{ flex: 2, margin: '20px' }}>
+        <Card style={{ flex: 2, margin: '20px' }}>
           <CardContent>
             <Typography variant="body1" component="p">
               {quote}

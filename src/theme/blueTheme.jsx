@@ -7,8 +7,8 @@ export const blueTheme = createTheme({
       main: "#2196f3",
     },
     secondary: {
-      main: "#f50057",
-    },
+      main: "#F7F7F7",
+    },    
     error: {
       main: red.A400,
     },
@@ -38,6 +38,13 @@ export const blueTheme = createTheme({
           '& .MuiSvgIcon-root': {
             color: '#ffffff',
           },
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.20)', // Esto simula una elevación de 25 para la tarjeta
         },
       },
     },
