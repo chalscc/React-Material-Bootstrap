@@ -1,10 +1,17 @@
-import { useState } from 'react';
-import { Grid, Card, CardContent, Typography } from '@mui/material';
+import { useEffect } from 'react';
+import { Grid } from '@mui/material';
 import { VehiclesCard } from '../components';
+import { useDispatch, useSelector } from 'react-redux'
+import { setCars } from '../../store/slices';
 
 export const CarShopView = ({ cars }) => {
+  const dispatch = useDispatch();
 
-  const [carList, setCarList] = useState(cars);
+  const { carList } = useSelector(state => state.cars);
+
+  useEffect(() => {
+    dispatch(setCars(cars));
+  }, [])  
 
   return (
     <Grid
