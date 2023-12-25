@@ -1,4 +1,5 @@
 import { Box, Checkbox, Divider, Drawer, FormControlLabel, FormGroup, Rating, Slider, Toolbar, Typography } from '@mui/material'
+
 import { fuelTypes } from '../../data';
 import { FilterByBrand } from './Filter/FilterByBrand';
 

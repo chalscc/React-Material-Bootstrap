@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
+
 import { Grid } from '@mui/material';
-import { VehiclesCard } from '../components';
 import { useDispatch, useSelector } from 'react-redux'
+
+import { VehiclesCard } from '../components';
 import { setCarsInit } from '../../store/slices';
 
 export const CarShopView = ({ cars }) => {
