@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Grid } from '@mui/material';
 import { VehiclesCard } from '../components';
 import { useDispatch, useSelector } from 'react-redux'
-import { setCars } from '../../store/slices';
+import { setCarsInit } from '../../store/slices';
 
 export const CarShopView = ({ cars }) => {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ export const CarShopView = ({ cars }) => {
   const { carList } = useSelector(state => state.cars);
 
   useEffect(() => {
-    dispatch(setCars(cars));
+    dispatch(setCarsInit(cars));
   }, [])  
 
   return (

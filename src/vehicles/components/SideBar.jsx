@@ -1,7 +1,30 @@
 import { Box, Checkbox, Divider, Drawer, FormControlLabel, FormGroup, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Rating, Slider, Toolbar, Typography } from '@mui/material'
 import { brands, fuelTypes } from '../../data'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { filterCarsByBrand } from '../../store/slices';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
+
+  const dispatch = useDispatch();
+  const [checkedBrands, setCheckedBrands] = useState({});
+
+  const handleBrandChange = (event) => {
+    const { name, checked } = event.target;
+  
+    setCheckedBrands(prevState => {
+      const updatedBrands = {
+        ...prevState,
+        [name]: checked
+      };
+  
+      const activeBrands = Object.keys(updatedBrands).filter(brand => updatedBrands[brand]);
+      dispatch(filterCarsByBrand(activeBrands));
+  
+      return updatedBrands;
+    });
+  };
+
   return (
     <Box
       sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
@@ -30,12 +53,18 @@ export const SideBar = ({ drawerWidth = 240 }) => {
           <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
             Marca
           </Typography>
-          {brands.map((name, index) => (
+          {brands.map((name) => (
             <FormControlLabel
-              key={index}
-              control={<Checkbox />}
-              label={name}
-              style={{ marginBottom: '10px' }}
+            key={name}
+            control={
+              <Checkbox
+                checked={!!checkedBrands[name]}
+                onChange={handleBrandChange}
+                name={name}
+              />
+            }
+            label={name}
+            style={{ marginBottom: '10px' }}
             />
           ))}
         </FormGroup>
