@@ -9,8 +9,8 @@ export const VehiclesExpert = ({ id, name, quote }) => {
 
   return (
     <Grid item sm={6}>
-      <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Card style={{ flex: 1 }}>
+      <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+        <Card sx={{ flex: 1 }}>
           <CardMedia
             component="img"
             height={heightImage}
@@ -19,12 +19,12 @@ export const VehiclesExpert = ({ id, name, quote }) => {
           />
         </Card>
 
-        <Card style={{ flex: 2, margin: '20px' }}>
+        <Card sx={{ flex: 2, margin: '20px' }}>
           <CardContent>
             <Typography variant="body1" component="p">
               {quote}
             </Typography>
-            <Typography variant="subtitle2" color="textSecondary" style={{ marginTop: '10px' }}>
+            <Typography variant="subtitle2" color="textSecondary" sx={{ marginTop: '10px' }}>
               {name}
             </Typography>
           </CardContent>

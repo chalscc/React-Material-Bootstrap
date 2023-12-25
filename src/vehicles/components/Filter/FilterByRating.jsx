@@ -13,7 +13,7 @@ export const FilterByRating = () => {
   }
 
   return (
-    <Box style={{ padding: '20px', textAlign: 'center' }}>
+    <Box sx={{ padding: '20px', textAlign: 'center' }}>
       <Typography variant="subtitle1" gutterBottom>
         Media de valoración por cliente
       </Typography>

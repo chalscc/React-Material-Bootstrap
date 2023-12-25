@@ -3,7 +3,7 @@ import React from 'react'
 
 export const FilterByPrice = () => {
   return (
-    <Box style={{ padding: '25px' }}>
+    <Box sx={{ padding: '25px' }}>
           <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
             Rango de Precio
           </Typography>

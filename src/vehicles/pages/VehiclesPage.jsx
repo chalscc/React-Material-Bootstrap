@@ -14,7 +14,7 @@ export const VehiclesPage = () => {
   const bgColor = theme.palette.secondary.main;
 
   return (
-    <Box style={{ backgroundColor: bgColor }}>
+    <Box sx={{ backgroundColor: bgColor }}>
       <VehiclesLayout>
 
         <ExpertsView experts={experts} />

@@ -23,7 +23,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
           justifyContent='flex-start'
           alignItems='center'
           spacing={2}
-          style={{ width: '100%' }}
+          sx={{ width: '100%' }}
         >
           {pages.map((page) => (
             <Grid item key={page}>
@@ -42,7 +42,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
           justifyContent='flex-end'
           alignItems='center'
           spacing={2}
-          style={{ width: '100%' }}
+          sx={{ width: '100%' }}
         >
 
           <Grid item>

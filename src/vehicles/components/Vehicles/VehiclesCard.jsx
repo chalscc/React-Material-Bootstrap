@@ -31,14 +31,14 @@ export const VehiclesCard = ({ id, brand, fuelType, mileage, year, model, monthl
               </Box>
             </Box>
           </Grid>
-          <Divider />
+          <Divider sx={{ margin: '5px 0' }} />
           <Typography gutterBottom variant="h5">
             {brand}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {model}
           </Typography>
-          <Divider style={{ margin: '10px 0' }} />
+          <Divider sx={{ margin: '5px 0' }} />
           <Grid container spacing={1} justifyContent="center" alignItems="center">
             <Grid item xs={3} align="center">
               {year}

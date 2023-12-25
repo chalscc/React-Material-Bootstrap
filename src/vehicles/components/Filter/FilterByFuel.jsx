@@ -4,7 +4,7 @@ import { fuelTypes } from '../../../data';
 
 export const FilterByFuel = () => {
   return (
-    <FormGroup style={{ padding: '20px' }}>
+    <FormGroup sx={{ padding: '20px' }}>
           <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
             Tipo de combustible
           </Typography>

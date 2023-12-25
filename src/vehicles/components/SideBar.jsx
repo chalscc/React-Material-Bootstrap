@@ -21,7 +21,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
         }}
       >
         <Toolbar>
-          <Typography variant='h5' style={{ flexGrow: 1, textAlign: 'center' }}>
+          <Typography variant='h5' sx={{ flexGrow: 1, textAlign: 'center' }}>
             Filtros
           </Typography>
         </Toolbar>

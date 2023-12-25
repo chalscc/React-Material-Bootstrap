@@ -14,7 +14,7 @@ export const ExpertsView = ( {experts} ) => {
       direction='column'
       justifyContent='flex-end'
       alignItems='center'
-      style={{ height: '37vh' }}
+      sx={{ height: '37vh' }}
     >
       <Grid
         container
@@ -22,7 +22,7 @@ export const ExpertsView = ( {experts} ) => {
         justifyContent='center'
         alignItems='center'
         spacing={2}
-        style={{ width: '100%' }}
+        sx={{ width: '100%' }}
       >
 
         {

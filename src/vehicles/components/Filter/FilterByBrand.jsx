@@ -28,7 +28,7 @@ export const FilterByBrand = () => {
   };
 
   return (
-    <FormGroup style={{ padding: '20px' }}>
+    <FormGroup sx={{ padding: '20px' }}>
       <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
         Marca
       </Typography>
@@ -43,7 +43,7 @@ export const FilterByBrand = () => {
             />
           }
           label={name}
-          style={{ marginBottom: '10px' }}
+          sx={{ marginBottom: '10px' }}
         />
       ))}
     </FormGroup>

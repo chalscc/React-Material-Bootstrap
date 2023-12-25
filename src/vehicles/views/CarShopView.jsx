@@ -21,7 +21,7 @@ export const CarShopView = ({ cars }) => {
       direction='column'
       justifyContent='flex-end'
       alignItems='center'
-      style={{ height: '50vh' }}
+      sx={{ height: '50vh' }}
     >
       <Grid
         container
@@ -29,7 +29,7 @@ export const CarShopView = ({ cars }) => {
         justifyContent='center'
         alignItems='center'
         spacing={2}
-        style={{ width: '100%' }}
+        sx={{ width: '100%' }}
       >
 
         {
