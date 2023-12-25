@@ -46,7 +46,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
 
         <Divider />
 
-        <div style={{ padding: '25px' }}>
+        <Box style={{ padding: '25px' }}>
           <Typography variant="subtitle1" gutterBottom sx={{ textAlign: 'center' }}>
             Rango de Precio
           </Typography>
@@ -57,7 +57,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
             valueLabelDisplay="auto"
             aria-labelledby="range-slider"
           />
-        </div>
+        </Box>
 
         <Divider />
 

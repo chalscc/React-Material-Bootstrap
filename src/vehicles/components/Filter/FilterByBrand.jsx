@@ -1,9 +1,10 @@
-import { useDispatch } from "react-redux";
-import { filterCarsByBrand } from "../../../store/slices";
 import { useState } from "react";
-import { Checkbox, FormControlLabel, FormGroup, Typography } from "@mui/material";
-import { brands } from '../../../data'
 
+import { Checkbox, FormControlLabel, FormGroup, Typography } from "@mui/material";
+import { useDispatch } from "react-redux";
+
+import { filterCarsByBrand } from "../../../store/slices";
+import { brands } from '../../../data'
 
 export const FilterByBrand = () => {
 
