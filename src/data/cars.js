@@ -9,7 +9,8 @@ export const cars = [
       'year': '2014',
       'mileage': '104,791',
       'fuelType': 'Gasoline',
-      'transmission': 'Manual',      
+      'transmission': 'Manual',
+      'rating': 1,
   },
   {
     'id': '2',
@@ -21,7 +22,8 @@ export const cars = [
     'year': '2018',
     'mileage': '69,776',
     'fuelType': 'Diesel',
-    'transmission': 'Manual',      
+    'transmission': 'Manual',
+    'rating': 2,
 },
 {
   'id': '3',
@@ -33,7 +35,8 @@ export const cars = [
   'year': '2018',
   'mileage': '53,878',
   'fuelType': 'Gasoline',
-  'transmission': 'Manual',      
+  'transmission': 'Manual',
+  'rating': 3,
 },
 {
   'id': '4',
@@ -45,6 +48,7 @@ export const cars = [
   'year': '2019',
   'mileage': '99,767',
   'fuelType': 'Gasoline',
-  'transmission': 'Manual',      
+  'transmission': 'Manual',
+  'rating': 4, 
 },
 ]

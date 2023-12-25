@@ -2,6 +2,7 @@ import { Box, Checkbox, Divider, Drawer, FormControlLabel, FormGroup, Rating, Sl
 
 import { fuelTypes } from '../../data';
 import { FilterByBrand } from './Filter/FilterByBrand';
+import { FilterByRating } from './Filter/FilterByRating';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
 
@@ -33,17 +34,8 @@ export const SideBar = ({ drawerWidth = 240 }) => {
 
         <Divider />
 
-        <Box style={{ padding: '20px', textAlign: 'center' }}>
-          <Typography variant="subtitle1" gutterBottom>
-            Media de valoración por cliente
-          </Typography>
-          <Rating
-            name="ratingClient"
-            precision={1}
-            max={5}
-            size="large"
-          />
-        </Box>
+        <FilterByRating />
+
 
         <Divider />
 
