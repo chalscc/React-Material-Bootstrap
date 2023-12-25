@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
-import { VehiclesCard } from '../components';
+import { VehiclesCard } from '../../components';
 
 export const CarShopView = ({ cars }) => {
 

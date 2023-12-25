@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
-import { VehiclesCard, VehiclesExpert } from '../components';
+import { VehiclesCard, VehiclesExpert } from '../../components';
 
 export const ExpertsView = ( {experts} ) => {
 

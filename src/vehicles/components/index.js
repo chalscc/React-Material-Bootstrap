@@ -1,4 +1,4 @@
 export * from './SideBar';
 export * from './NavBar';
-export * from './VehiclesCard';
-export * from './VehiclesExpert';
+export * from './Vehicles/VehiclesCard';
+export * from './Vehicles/VehiclesExpert';

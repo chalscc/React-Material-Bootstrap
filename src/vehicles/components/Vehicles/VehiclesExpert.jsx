@@ -1,5 +1,5 @@
 import { Card, CardContent, CardMedia, Grid, Typography, CardActions, Button } from "@mui/material"
-import { useImage } from "../../helpers"
+import { useImage } from "../../../helpers"
 
 const heightImage = 350;
 
